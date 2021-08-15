@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "Dagger2TryMigration"
+include ':app'
+include ':feature_one'
+include ':feature_two_api'
+include ':feature_two_impl'
+include ':core_dagger2'
+include ':core_network_api'
+include ':feature_account'
