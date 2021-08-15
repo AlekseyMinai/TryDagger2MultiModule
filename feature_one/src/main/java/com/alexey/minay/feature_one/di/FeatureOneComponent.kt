@@ -40,7 +40,7 @@ abstract class FeatureOneComponent {
     }
 
     @Component(dependencies = [IFeatureTwoFragmentProvider::class, AccountRepo::class])
-    @Singleton
+    @FeatureScope
     interface FeatureOneDependencyComponent : FeatureOneDependency
 
 }
